@@ -1,0 +1,17 @@
+Package: Fast2TWAS
+Title: 快速获得GWAS、TWAS、等后续postGWAS结果
+Version: 0.0.26.1
+Authors: "xiechengyong"
+Maintainer: xiechengyong<xiechengyong@yeah.net>
+Description: 快速获得GWAS、TWAS、等后续postGWAS结果
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+#Imports:
+        data.table,MungeSumstats,devtools,friendlypostGWASsoft,TwoSampleMR,optparse,RColorBrewer,plink2R
+NeedsCompilation: no
+Packaged: 2025-06-06 15:17:00 UTC; xiechengyong
+Depends: R (>= 3.5.0)
+Built: R 4.4.1; ; 2025-06-06 15:17:09 UTC; windows

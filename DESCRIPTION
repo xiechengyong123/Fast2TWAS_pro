@@ -1,6 +1,6 @@
 Package: Fast2TWAS
 Title: 快速获得GWAS、TWAS、等后续postGWAS结果
-Version: 0.0.26.3
+Version: 0.0.26.4
 Authors: "xiechengyong"
 Maintainer: xiechengyong<xiechengyong@yeah.net>
 Description: 快速获得GWAS、TWAS、等后续postGWAS结果

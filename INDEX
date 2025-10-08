@@ -1,0 +1,239 @@
+CPASSOC_cross_trait     CPASSOC对两个GWAS数据进行跨性状关联分析
+ECLIPSER_clumping_run   调用ECLIPSER中的代码针对每个性状和组织组合进行clumping分析
+ECLIPSER_py_install     创建ECLIPSER的python环境
+ECLIPSER_run            调用ECLIPSER代码，基于eQTLs/sQTLs和其他功能数据，测试映射到复杂疾病或性状的
+                        GWAS
+                        基因座的基因表达是否在一个或多个组织的特定细胞类型中富集
+FUSION_tissue           FUSION软件进行TWAS分析时部分可用组织
+GNOVA_estimate_genetic_correlation
+                        调用GNOVA进行genetic covariance分析
+GSMR_MR                 调用gsmr包进行SMR和HEIDI analysis
+GeneEnrich_prepare_gene_set_run
+                        创建GeneEnrich的中的代码准备gene sets文件
+GeneEnrich_py_install   创建GeneEnrich的python环境
+GeneEnrich_run          调用GeneEnrich评估特定组织中表达的一组背景基因在预定义生物通路或基因集中的富集情况
+HDL_h2                  调用HDL包计算SNP-based heritabiity
+HDL_rg                  调用HDL包计算SNP-based genetic correlations
+HDL_rg_parallel         调用HDL包多核计算SNP-based genetic correlations
+LOGODetect_rg           调用LOGODetect识别两个性状之间的局部遗传相关性
+MetaXcan_MASHR_M_model
+                        case-control型GWAS数据与GTEx v8
+                        MASH模型的整合分析
+MetaXcan_SMulTiXcan     MetaXcan_SMulTiXcan进行跨组织TWAS分析
+MetaXcan_SPrediXcan     MetaXcan_SPrediXcan进行单个组织TWAS分析，生成49个.csv文件
+MetaXcan_SPrediXcan_easy
+                        快速简单的使用MetaXcan_SPrediXcan进行单个组织TWAS分析，生成49个.csv文件
+MetaXcan_quick_harmonization
+                        转换GWAS数据的基因组版本，数据来源于UCSC，易于使用，但对应的变异较少，返回数据框
+MiXeR_bivariate_run     MiXeR软件进行GWAS跨性状分析
+MiXeR_bivariate_visualize_run
+                        MiXeR软件双性状GWAS分析可视化
+MiXeR_ld_run            利用参考文件生成.ld文件
+MiXeR_ld_run_multiprocess
+                        利用参考文件生成.ld文件
+MiXeR_py_install        创建MiXeR的python环境：fast2twas_MiXeR和配置libbgmg.so文件
+MiXeR_snps_run          利用参考文件生成.snp文件
+MiXeR_univariate_run    MiXeR软件进行单个GWAS分析
+MiXeR_univariate_visualize_run
+                        MiXeR软件单个GWAS分析可视化
+Open4Gene_install       开始配置Open4Gene的运行R包和python环境：fast2twas_Open4Gene
+Open4Gene_run           开始运行Open4Gene
+PLACO_cross_trait       调用PLACO对两个GWAS数据进行跨性状关联分析
+PRS_CS_run              调用PRS-CS软件利用GWAS数据与外部LD参考面板来计算SNP后验效应值
+PRS_PRSice              调用PRSice-2进行多基因风险评分
+PRS_target_data_qc      多基因风险评分中目标数据（Target
+                        Data）的质量控制
+QTLEnrich_forest_boxplot_run
+                        调用QTLEnrich的输出文件生成forest_boxplot图
+QTLEnrich_py_install    创建QTLEnrich的python环境
+QTLEnrich_qqplot_run    用QTLEnrich的输出文件生成Q-Q图
+QTLEnrich_run           使用QTLEnrich用于评估给定组织中表达定量性状位点（eQTL）或剪接
+                        QTL（sQTL）之间复杂疾病或性状关联的富集情况
+SMR_HEIDI_analysis      SMR软件进行SMR和HEIDI analysis分析
+SMR_locus_plot          SMR软件绘制SMR locus图
+SMR_query_eQTL_summary
+                        SMR软件获取eQTL Summary
+                        Results数据（https://yanglab.westlake.edu.cn/software/smr/#DataResource）
+SUPERGNOVA_estimate_genetic_correlation
+                        调用SUPERGNOVA进行local genetic
+                        covariance和correlation分析
+SumStatsRehab_diagnose
+                        调用SumStatsRehab中的diagnose功能检测GWAS数据
+SumStatsRehab_fix       调用SumStatsRehab中的fix功能修补GWAS数据
+SumStatsRehab_prepare_dbSNPs
+                        调用SumStatsRehab中的prepare_dbSNPs功能准备dbSNPs数据
+SumStatsRehab_py_install
+                        创建SumStatsRehab的python环境
+TWAS_Manhattan_plot     调用CMplot包绘制TWAS结果的全基因组曼哈顿图，数据表头至少包含"ID","CHR","P0","TWAS.P"列
+TWAS_UTMOST_cross_tissue
+                        UTMOST软件执行TWAS分析,计算GTExV8中跨组织联合测试关联结果
+TWAS_UTMOST_single_tissue
+                        UTMOST软件执行TWAS分析，获取GTExV8中单个组织中基因与疾病之间的TWAS分析结果
+TWAS_focus_creating_weight_database
+                        调用FOCUS软件创建db数据库：https://github.com/mancusolab/ma-focus/wiki/Creating-a-weight-database
+TWAS_focus_fine_mapping_multiprocess
+                        FOCUS软件将GWAS数据摘要和eQTL权重作为输入，来进行fine-mapping分析
+TWAS_focus_format       调用TwoSampleMR包将GWAS数据生成生成FOCUS软件执行TWAS分析所需的数据（表头："CHR","BP","SNP","A1","A2","Z","N"）
+TWAS_focus_format_clean
+                        调用FOCUS软件将GWAS数据转换成FOCUS软件执行fine-mapping分析所需的数据（表头："CHR","BP","SNP","A1","A2","Z","N"）
+TWAS_fusion_conditional_plot_multiprocess
+                        FUSION软件执行TWAS分析，进行Joint/condation分析
+TWAS_fusion_multiprocess
+                        FUSION软件执行TWAS分析，获取基因与疾病之间的TWAS分析结果，可以多线程进行
+batch_download_ieu      直接从IEU官网批量下载vcf.gz文件
+caviar_CAVIAR_run       调用CAVIAR量化识别关联区域中每个变异是因果关系的概率，且允许任意数量的因果变异
+caviar_eCAVIAR_run      调用eCAVIAR进行基于贝叶斯的GWAS和eQTL共同定位
+caviar_mupCAVIAR_run    调用mupCAVIAR进行基于贝叶斯的多GWAS共同定位
+caviar_setCAVIAR_run    调用setCAVIAR量化识别关联区域中每个变异是因果的概率，且允许任意数量的因果变异
+chat_with_me            Fast2TWAS包作者的联系方式
+coloc_ieu_gwas2gwas     调用IEU官网的GWAS数据进行共定位分析并绘图
+coloc_local_gwas2gwas   本地GWAS数据进行共定位分析并绘图
+coloc_online_gwas2xqtl
+                        调用coloc包在指定基因组区域中进行共定位分析并绘图(可调用decode,ukb-ppp,eqtl:GTExv8,eqtlgen)
+condfdr_conjfdr_run     cfdr.pleio包计算条件错误发现率（condFDR）和联合错误发现率（conjFDR）的方法（Andreassen
+                        et al.,
+                        2013），用于研究成对表型性状间的多效性基因变异
+csMR_py_install         开始创建csMR的python环境：fast2twas_csMR
+csMR_run                通过整合GWAS和单细胞eQTL数据，找到复杂性状/疾病的细胞分层因果关系
+csMR_run_multiple       通过整合GWAS和单细胞eQTL数据，找到复杂性状/疾病的细胞分层因果关系，自动创建配置文件并调用Snakemake工作流运行
+detect_confounding_snp
+                        调用shiny和MendelianRandomization包实现可视化去除混杂SNPs数据
+fast_dowmArticle        调用python脚本从SCI-HUB爬取文献
+fastenloc_coloc_run     调用fastenloc软件进行共定位分析
+fastenloc_prepare_DAP_G_SuSiE_run
+                        调用fastenloc中的代码处理DAP-G/SuSiE
+                        Fine-mapping输出文件
+find_positive_exposure
+                        调用TwoSampleMR包来查询多个暴露对一个结局的MR结果
+find_positive_outcomes
+                        调用TwoSampleMR包来查询一个暴露对多个结局的MR结果
+finngenClean            处理芬兰GWAS数据文件
+fizi_impute             调用fizi软件使用参照LD推算汇总统计数据
+fizi_munge              调用fizi软件将GWAS数据转换成fizi执行impute分析所需的数据（表头："CHR","BP","SNP","A1","A2","Z","SE","N"）
+format_LDSC_data        调用TwoSampleMR包将GWAS数据生成LDSC格式的数据（表头："SNP","A1","A2","N","Z"）
+gcta_add_freq           调用GCTA软件进行计算参考基因组文件的freq，并添加到GWAS数据中
+get_eqlsum_form_GTExV8_local
+                        从本地GTEx v8文件中提取指定基因的的eqtl信息
+get_eqtlsum_from_eQTL_Catalogue
+                        调用eQTL
+                        Catalogue的API接口获取基因和/或一定范围内的eqtls
+get_gene_info_from_ensembl
+                        调用ensembl官网的API接口获取基因的信息
+get_lava_block_file     调用lava-partitioning构建基因座的文件
+get_pqtl_from_online    从在线网站获取ukb_ppp或decode中的pqtl数据
+get_rsID_from_chrBP_batch
+                        调用python，根据CHR,BP,(effect_allele,other_allele)大批量获取rsID
+get_snp_info_from_online
+                        调用不同来源的API接口获取SNPs的信息
+get_target_gene_data_for_MR
+                        从本地或IEU数据库中的GWAS数据中提取指定基因和/或一定范围内的SNPs用于MR分析
+gsMap_format_sumstats_run
+                        将GWAS统计摘要转换成gsMap可以识别的格式
+gsMap_py_install        开始创建gsMap的python环境：fast2twas_gsMap
+gsMap_quick_mode_run    在快速模式下运行gsMap
+gwas2format             整理GWAS数据生成建议的GWAS数据格式
+gwas_easy_annovar       调用ANNOVAR对GWAS数据进行注释：https://annovar.openbioinformatics.org/en/latest/
+gwas_liftover           调用MungeSumstats包中的liftover转换GWAS数据的基因组版本
+gwas_pw_estimate_genetic_correlation
+                        调用gwas-pw用于联合分析两个GWAS进行Local
+                        genetic correlation
+gwas_pw_estimate_genetic_correlation_pro
+                        调用gwas-pw用于联合分析两个GWAS进行Local
+                        genetic correlation
+gwasimputation_imputating
+                        将GWAS数据中的变异与GTEx研究中的变异统一起来，并允许对GWAS中缺失的变异进行推算
+gwasimputation_imputating_postprocess
+                        将imputated后的GWAS数据合并起来，返回数据框
+gwasimputation_liftover
+                        转换GWAS数据的基因组版本，返回数据框
+hess_estimate_genetic_correlation_step1
+                        调用hess计算eigenvalues, squared projections,
+                        and product of projections
+hess_estimate_genetic_correlation_step1_pro
+                        调用hess计算eigenvalues, squared projections,
+                        and product of projections
+hess_estimate_genetic_correlation_step2
+                        调用hess估计每个性状的局部SNP遗传性和标准误差
+hess_estimate_genetic_correlation_step3
+                        调用hess估计locl遗传协方差和标准误差
+hess_estimate_heritability_step1
+                        调用hess计算eigenvalues and squared projections
+hess_estimate_heritability_step2
+                        调用hess估计局部SNP遗传性和标准误差
+hess_estimate_lambdagc
+                        调用hess来推断基因组控制因子
+hess_estimate_phenocor
+                        调用hess估计表型相关性
+hess_visualizing_contrast_polygenicity
+                        调用hess绘制性状间多基因性程度的对比图
+hess_visualizing_genetic_covariance
+                        调用hess绘制遗传协方差的曼哈顿图
+hess_visualizing_heritability
+                        调用hess绘制遗传度的曼哈顿图
+hess_visualizing_putative_causality
+                        调用hess推定因果关系并绘图
+hyprcoloc_local         调用hyprcoloc包在指定基因组区域中识别共定位性状群和候选因果SNP，并绘图
+hyprcoloc_online_gwas2xqtl
+                        调用hyprcoloc包在指定基因组区域中识别共定位性状群和候选因果SNP(可调用decode,ukb-ppp,eqtl:GTExv8,eqtlgen)，并绘图
+install_Fast2TWAS_dependence
+                        安装Fast2TWAS的相关依赖
+lava_h2                 调用LAVA包计算local heritability
+lava_h2_rg              调用LAVA包计算local heritability和local genetic
+                        correlation
+lava_pcor               调用LAVA包计算Local partial genetic correlation
+                        analysis
+lava_rg                 调用LAVA包计算local genetic correlation
+ldsc_Cell_type_specific
+                        调用ldsc软件进行Cell type specific analyses
+ldsc_format             调用ldsc软件生成.sumstats.gz格式文件(表头：SNP
+                        A1 A2 N Z)，无返回值
+ldsc_h2                 调用ldsc软件计算SNP遗传度
+ldsc_partitioned_heritability
+                        调用ldsc软件计算Partitioning heritability
+ldsc_rg                 调用ldsc软件计算遗传相关性
+locusZoom_gassocplot2   调用gassocplot2包绘制指定基因和/或一定范围内的SNPs的LocusZoom图，无返回值
+magma_gene_based        调用MAGMA软件实现gene-based &
+                        gene-set-based关联分析
+magma_gene_property     调用MAGMA软件进行Gene property analysis for
+                        tissue specificity分析
+mendelian_randomization
+                        从本地或IEU数据库中的GWAS数据中筛选工具变量并进行MR分析
+mesc_gene_set_analysis
+                        计算基因集的表达得分。可对多个组织/条件的表达得分进行meta分析，也可不进行meta分析。
+mesc_meta_analyze_weights
+                        对不同条件下的表达得分进行meta分析
+mesc_run                调用mesc软件通过测定基因表达水平来估算遗传率：https://github.com/douglasyao/mesc
+metal_gwas              调用METAL软件进行GWAS数据的meta分析，有返回值
+mtag_cross_trait        调用MTAG进行跨GWAS性状的meta分析
+my_token                获取用户计算机的token
+pleiofdr_run            通过利用遗传多效性增强低统计效能GWAS研究的基因位点发现率，并识别与两种表型联合相关的基因位点
+plink_meta              调用plink软件进行meta分析
+pwcoco_local_gwas2gwas
+                        调用PWCoCo进行Pair-Wise Conditional
+                        analysis和Colocalisation analysis分析
+pwcoco_local_gwas2gwas_pro
+                        调用PWCoCo在指定基因组区域中进行Pair-Wise
+                        Conditional analysis和Colocalisation
+                        analysis分析
+python_convert_csv      调用fast2twas_python_convert的python环境，启用"csv"功能，用于转换GWAS数据格式
+python_convert_fdrmat2csv
+                        将cond/conjFDR结果中的results.mat文件转换为.csv文件
+python_convert_fuma_defined_loci
+                        确定cond/conjFDR结果中独立的基因组位点，实现与FUMA相同的逻辑
+python_convert_mat      将GWAS数据转换为.mat文件格式
+python_convert_py_install
+                        创建python_convert的python环境：fast2twas_python_convert用于转换GWAS数据格式
+python_convert_zscore   调用fast2twas_python_convert的python环境，启用"zscore"功能，用于转换GWAS数据格式
+read_gwas2format        读入本地GWAS数据生成建议的GWAS数据格式
+read_ieu_data           直接从IEU官网或本地读取vcf.gz文件生成GWAS数据
+read_ieu_data_pro       调用python代码直接从IEU官网或本地读取vcf.gz文件生成GWAS数据
+scDRS_compute_score_run
+                        计算scDRS分数，为每个性状生成.score.gz和.full_score.gz文件
+scDRS_munge_gs_run      将.tsv格式的GWAS基因统计文件转换为scDRS的.gs文件
+scDRS_perform_downstream_run
+                        根据预先计算的.full_score.gz文件执行scDRS下游分析
+scDRS_py_install        开始创建scDRS的python环境：fast2twas_scDRS
+set_work_dir            设置工作文件夹，创建code，result，log，data文件夹
+show_demo_gwas          Fast2TWAS包中作为输入文件的GWAS数据格式和表头
+stack_assoc_plot_gassocplot2
+                        调用gassocplot2包绘制指定基因组区域stack_assoc_plot图

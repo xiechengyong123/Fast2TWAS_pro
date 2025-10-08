@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head><title>R: 快速获得GWAS、TWAS、等后续postGWAS结果</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+<h1> 快速获得GWAS、TWAS、等后续postGWAS结果
+<img class="toplogo" src="../../../doc/html/Rlogo.svg" alt="[R logo]" />
+</h1>
+<hr/>
+<div style="text-align: center;">
+<a href="../../../doc/html/packages.html"><img class="arrow" src="../../../doc/html/left.jpg" alt="[Up]" /></a>
+<a href="../../../doc/html/index.html"><img class="arrow" src="../../../doc/html/up.jpg" alt="[Top]" /></a>
+</div><h2>Documentation for package &lsquo;Fast2TWAS&rsquo; version 0.0.26.5</h2>
+
+<ul><li><a href="../DESCRIPTION" type="text/plain; charset=utf-8">DESCRIPTION file</a>.</li>
+</ul>
+
+<h2>Help Pages</h2>
+
+
+<p style="text-align: center;">
+<a href="#B">B</a>
+<a href="#C">C</a>
+<a href="#D">D</a>
+<a href="#E">E</a>
+<a href="#F">F</a>
+<a href="#G">G</a>
+<a href="#H">H</a>
+<a href="#I">I</a>
+<a href="#L">L</a>
+<a href="#M">M</a>
+<a href="#O">O</a>
+<a href="#P">P</a>
+<a href="#Q">Q</a>
+<a href="#R">R</a>
+<a href="#S">S</a>
+<a href="#T">T</a>
+</p>
+
+
+<h2><a id="B">-- B --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="batch_download_ieu.html">batch_download_ieu</a></td>
+<td>直接从IEU官网批量下载vcf.gz文件</td></tr>
+</table>
+
+<h2><a id="C">-- C --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="caviar_CAVIAR_run.html">caviar_CAVIAR_run</a></td>
+<td>调用CAVIAR量化识别关联区域中每个变异是因果关系的概率，且允许任意数量的因果变异</td></tr>
+<tr><td style="width: 25%;"><a href="caviar_eCAVIAR_run.html">caviar_eCAVIAR_run</a></td>
+<td>调用eCAVIAR进行基于贝叶斯的GWAS和eQTL共同定位</td></tr>
+<tr><td style="width: 25%;"><a href="caviar_mupCAVIAR_run.html">caviar_mupCAVIAR_run</a></td>
+<td>调用mupCAVIAR进行基于贝叶斯的多GWAS共同定位</td></tr>
+<tr><td style="width: 25%;"><a href="caviar_setCAVIAR_run.html">caviar_setCAVIAR_run</a></td>
+<td>调用setCAVIAR量化识别关联区域中每个变异是因果的概率，且允许任意数量的因果变异</td></tr>
+<tr><td style="width: 25%;"><a href="chat_with_me.html">chat_with_me</a></td>
+<td>Fast2TWAS包作者的联系方式</td></tr>
+<tr><td style="width: 25%;"><a href="coloc_ieu_gwas2gwas.html">coloc_ieu_gwas2gwas</a></td>
+<td>调用IEU官网的GWAS数据进行共定位分析并绘图</td></tr>
+<tr><td style="width: 25%;"><a href="coloc_local_gwas2gwas.html">coloc_local_gwas2gwas</a></td>
+<td>本地GWAS数据进行共定位分析并绘图</td></tr>
+<tr><td style="width: 25%;"><a href="coloc_online_gwas2xqtl.html">coloc_online_gwas2xqtl</a></td>
+<td>调用coloc包在指定基因组区域中进行共定位分析并绘图(可调用decode,ukb-ppp,eqtl:GTExv8,eqtlgen)</td></tr>
+<tr><td style="width: 25%;"><a href="condfdr_conjfdr_run.html">condfdr_conjfdr_run</a></td>
+<td>cfdr.pleio包计算条件错误发现率（condFDR）和联合错误发现率（conjFDR）的方法（Andreassen et al., 2013），用于研究成对表型性状间的多效性基因变异</td></tr>
+<tr><td style="width: 25%;"><a href="CPASSOC_cross_trait.html">CPASSOC_cross_trait</a></td>
+<td>CPASSOC对两个GWAS数据进行跨性状关联分析</td></tr>
+<tr><td style="width: 25%;"><a href="csMR_py_install.html">csMR_py_install</a></td>
+<td>开始创建csMR的python环境：fast2twas_csMR</td></tr>
+<tr><td style="width: 25%;"><a href="csMR_run.html">csMR_run</a></td>
+<td>通过整合GWAS和单细胞eQTL数据，找到复杂性状/疾病的细胞分层因果关系</td></tr>
+<tr><td style="width: 25%;"><a href="csMR_run_multiple.html">csMR_run_multiple</a></td>
+<td>通过整合GWAS和单细胞eQTL数据，找到复杂性状/疾病的细胞分层因果关系，自动创建配置文件并调用Snakemake工作流运行</td></tr>
+</table>
+
+<h2><a id="D">-- D --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="detect_confounding_snp.html">detect_confounding_snp</a></td>
+<td>调用shiny和MendelianRandomization包实现可视化去除混杂SNPs数据</td></tr>
+</table>
+
+<h2><a id="E">-- E --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="ECLIPSER_clumping_run.html">ECLIPSER_clumping_run</a></td>
+<td>调用ECLIPSER中的代码针对每个性状和组织组合进行clumping分析</td></tr>
+<tr><td style="width: 25%;"><a href="ECLIPSER_py_install.html">ECLIPSER_py_install</a></td>
+<td>创建ECLIPSER的python环境</td></tr>
+<tr><td style="width: 25%;"><a href="ECLIPSER_run.html">ECLIPSER_run</a></td>
+<td>调用ECLIPSER代码，基于eQTLs/sQTLs和其他功能数据，测试映射到复杂疾病或性状的 GWAS 基因座的基因表达是否在一个或多个组织的特定细胞类型中富集</td></tr>
+</table>
+
+<h2><a id="F">-- F --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="fastenloc_coloc_run.html">fastenloc_coloc_run</a></td>
+<td>调用fastenloc软件进行共定位分析</td></tr>
+<tr><td style="width: 25%;"><a href="fastenloc_prepare_DAP_G_SuSiE_run.html">fastenloc_prepare_DAP_G_SuSiE_run</a></td>
+<td>调用fastenloc中的代码处理DAP-G/SuSiE Fine-mapping输出文件</td></tr>
+<tr><td style="width: 25%;"><a href="fast_dowmArticle.html">fast_dowmArticle</a></td>
+<td>调用python脚本从SCI-HUB爬取文献</td></tr>
+<tr><td style="width: 25%;"><a href="find_positive_exposure.html">find_positive_exposure</a></td>
+<td>调用TwoSampleMR包来查询多个暴露对一个结局的MR结果</td></tr>
+<tr><td style="width: 25%;"><a href="find_positive_outcomes.html">find_positive_outcomes</a></td>
+<td>调用TwoSampleMR包来查询一个暴露对多个结局的MR结果</td></tr>
+<tr><td style="width: 25%;"><a href="finngenClean.html">finngenClean</a></td>
+<td>处理芬兰GWAS数据文件</td></tr>
+<tr><td style="width: 25%;"><a href="fizi_impute.html">fizi_impute</a></td>
+<td>调用fizi软件使用参照LD推算汇总统计数据</td></tr>
+<tr><td style="width: 25%;"><a href="fizi_munge.html">fizi_munge</a></td>
+<td>调用fizi软件将GWAS数据转换成fizi执行impute分析所需的数据（表头："CHR","BP","SNP","A1","A2","Z","SE","N"）</td></tr>
+<tr><td style="width: 25%;"><a href="format_LDSC_data.html">format_LDSC_data</a></td>
+<td>调用TwoSampleMR包将GWAS数据生成LDSC格式的数据（表头："SNP","A1","A2","N","Z"）</td></tr>
+<tr><td style="width: 25%;"><a href="FUSION_tissue.html">FUSION_tissue</a></td>
+<td>FUSION软件进行TWAS分析时部分可用组织</td></tr>
+</table>
+
+<h2><a id="G">-- G --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="gcta_add_freq.html">gcta_add_freq</a></td>
+<td>调用GCTA软件进行计算参考基因组文件的freq，并添加到GWAS数据中</td></tr>
+<tr><td style="width: 25%;"><a href="GeneEnrich_prepare_gene_set_run.html">GeneEnrich_prepare_gene_set_run</a></td>
+<td>创建GeneEnrich的中的代码准备gene sets文件</td></tr>
+<tr><td style="width: 25%;"><a href="GeneEnrich_py_install.html">GeneEnrich_py_install</a></td>
+<td>创建GeneEnrich的python环境</td></tr>
+<tr><td style="width: 25%;"><a href="GeneEnrich_run.html">GeneEnrich_run</a></td>
+<td>调用GeneEnrich评估特定组织中表达的一组背景基因在预定义生物通路或基因集中的富集情况</td></tr>
+<tr><td style="width: 25%;"><a href="get_eqlsum_form_GTExV8_local.html">get_eqlsum_form_GTExV8_local</a></td>
+<td>从本地GTEx v8文件中提取指定基因的的eqtl信息</td></tr>
+<tr><td style="width: 25%;"><a href="get_eqtlsum_from_eQTL_Catalogue.html">get_eqtlsum_from_eQTL_Catalogue</a></td>
+<td>调用eQTL Catalogue的API接口获取基因和/或一定范围内的eqtls</td></tr>
+<tr><td style="width: 25%;"><a href="get_gene_info_from_ensembl.html">get_gene_info_from_ensembl</a></td>
+<td>调用ensembl官网的API接口获取基因的信息</td></tr>
+<tr><td style="width: 25%;"><a href="get_lava_block_file.html">get_lava_block_file</a></td>
+<td>调用lava-partitioning构建基因座的文件</td></tr>
+<tr><td style="width: 25%;"><a href="get_pqtl_from_online.html">get_pqtl_from_online</a></td>
+<td>从在线网站获取ukb_ppp或decode中的pqtl数据</td></tr>
+<tr><td style="width: 25%;"><a href="get_rsID_from_chrBP_batch.html">get_rsID_from_chrBP_batch</a></td>
+<td>调用python，根据CHR,BP,(effect_allele,other_allele)大批量获取rsID</td></tr>
+<tr><td style="width: 25%;"><a href="get_snp_info_from_online.html">get_snp_info_from_online</a></td>
+<td>调用不同来源的API接口获取SNPs的信息</td></tr>
+<tr><td style="width: 25%;"><a href="get_target_gene_data_for_MR.html">get_target_gene_data_for_MR</a></td>
+<td>从本地或IEU数据库中的GWAS数据中提取指定基因和/或一定范围内的SNPs用于MR分析</td></tr>
+<tr><td style="width: 25%;"><a href="GNOVA_estimate_genetic_correlation.html">GNOVA_estimate_genetic_correlation</a></td>
+<td>调用GNOVA进行genetic covariance分析</td></tr>
+<tr><td style="width: 25%;"><a href="gsMap_format_sumstats_run.html">gsMap_format_sumstats_run</a></td>
+<td>将GWAS统计摘要转换成gsMap可以识别的格式</td></tr>
+<tr><td style="width: 25%;"><a href="gsMap_py_install.html">gsMap_py_install</a></td>
+<td>开始创建gsMap的python环境：fast2twas_gsMap</td></tr>
+<tr><td style="width: 25%;"><a href="gsMap_quick_mode_run.html">gsMap_quick_mode_run</a></td>
+<td>在快速模式下运行gsMap</td></tr>
+<tr><td style="width: 25%;"><a href="GSMR_MR.html">GSMR_MR</a></td>
+<td>调用gsmr包进行SMR和HEIDI analysis</td></tr>
+<tr><td style="width: 25%;"><a href="gwas2format.html">gwas2format</a></td>
+<td>整理GWAS数据生成建议的GWAS数据格式</td></tr>
+<tr><td style="width: 25%;"><a href="gwasimputation_imputating.html">gwasimputation_imputating</a></td>
+<td>将GWAS数据中的变异与GTEx研究中的变异统一起来，并允许对GWAS中缺失的变异进行推算</td></tr>
+<tr><td style="width: 25%;"><a href="gwasimputation_imputating_postprocess.html">gwasimputation_imputating_postprocess</a></td>
+<td>将imputated后的GWAS数据合并起来，返回数据框</td></tr>
+<tr><td style="width: 25%;"><a href="gwasimputation_liftover.html">gwasimputation_liftover</a></td>
+<td>转换GWAS数据的基因组版本，返回数据框</td></tr>
+<tr><td style="width: 25%;"><a href="gwas_easy_annovar.html">gwas_easy_annovar</a></td>
+<td>调用ANNOVAR对GWAS数据进行注释：https://annovar.openbioinformatics.org/en/latest/</td></tr>
+<tr><td style="width: 25%;"><a href="gwas_liftover.html">gwas_liftover</a></td>
+<td>调用MungeSumstats包中的liftover转换GWAS数据的基因组版本</td></tr>
+<tr><td style="width: 25%;"><a href="gwas_pw_estimate_genetic_correlation.html">gwas_pw_estimate_genetic_correlation</a></td>
+<td>调用gwas-pw用于联合分析两个GWAS进行Local genetic correlation</td></tr>
+<tr><td style="width: 25%;"><a href="gwas_pw_estimate_genetic_correlation_pro.html">gwas_pw_estimate_genetic_correlation_pro</a></td>
+<td>调用gwas-pw用于联合分析两个GWAS进行Local genetic correlation</td></tr>
+</table>
+
+<h2><a id="H">-- H --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="HDL_h2.html">HDL_h2</a></td>
+<td>调用HDL包计算SNP-based heritabiity</td></tr>
+<tr><td style="width: 25%;"><a href="HDL_rg.html">HDL_rg</a></td>
+<td>调用HDL包计算SNP-based genetic correlations</td></tr>
+<tr><td style="width: 25%;"><a href="HDL_rg_parallel.html">HDL_rg_parallel</a></td>
+<td>调用HDL包多核计算SNP-based genetic correlations</td></tr>
+<tr><td style="width: 25%;"><a href="hess_estimate_genetic_correlation_step1.html">hess_estimate_genetic_correlation_step1</a></td>
+<td>调用hess计算eigenvalues, squared projections, and product of projections</td></tr>
+<tr><td style="width: 25%;"><a href="hess_estimate_genetic_correlation_step1_pro.html">hess_estimate_genetic_correlation_step1_pro</a></td>
+<td>调用hess计算eigenvalues, squared projections, and product of projections</td></tr>
+<tr><td style="width: 25%;"><a href="hess_estimate_genetic_correlation_step2.html">hess_estimate_genetic_correlation_step2</a></td>
+<td>调用hess估计每个性状的局部SNP遗传性和标准误差</td></tr>
+<tr><td style="width: 25%;"><a href="hess_estimate_genetic_correlation_step3.html">hess_estimate_genetic_correlation_step3</a></td>
+<td>调用hess估计locl遗传协方差和标准误差</td></tr>
+<tr><td style="width: 25%;"><a href="hess_estimate_heritability_step1.html">hess_estimate_heritability_step1</a></td>
+<td>调用hess计算eigenvalues and squared projections</td></tr>
+<tr><td style="width: 25%;"><a href="hess_estimate_heritability_step2.html">hess_estimate_heritability_step2</a></td>
+<td>调用hess估计局部SNP遗传性和标准误差</td></tr>
+<tr><td style="width: 25%;"><a href="hess_estimate_lambdagc.html">hess_estimate_lambdagc</a></td>
+<td>调用hess来推断基因组控制因子</td></tr>
+<tr><td style="width: 25%;"><a href="hess_estimate_phenocor.html">hess_estimate_phenocor</a></td>
+<td>调用hess估计表型相关性</td></tr>
+<tr><td style="width: 25%;"><a href="hess_visualizing_contrast_polygenicity.html">hess_visualizing_contrast_polygenicity</a></td>
+<td>调用hess绘制性状间多基因性程度的对比图</td></tr>
+<tr><td style="width: 25%;"><a href="hess_visualizing_genetic_covariance.html">hess_visualizing_genetic_covariance</a></td>
+<td>调用hess绘制遗传协方差的曼哈顿图</td></tr>
+<tr><td style="width: 25%;"><a href="hess_visualizing_heritability.html">hess_visualizing_heritability</a></td>
+<td>调用hess绘制遗传度的曼哈顿图</td></tr>
+<tr><td style="width: 25%;"><a href="hess_visualizing_putative_causality.html">hess_visualizing_putative_causality</a></td>
+<td>调用hess推定因果关系并绘图</td></tr>
+<tr><td style="width: 25%;"><a href="hyprcoloc_local.html">hyprcoloc_local</a></td>
+<td>调用hyprcoloc包在指定基因组区域中识别共定位性状群和候选因果SNP，并绘图</td></tr>
+<tr><td style="width: 25%;"><a href="hyprcoloc_online_gwas2xqtl.html">hyprcoloc_online_gwas2xqtl</a></td>
+<td>调用hyprcoloc包在指定基因组区域中识别共定位性状群和候选因果SNP(可调用decode,ukb-ppp,eqtl:GTExv8,eqtlgen)，并绘图</td></tr>
+</table>
+
+<h2><a id="I">-- I --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="install_Fast2TWAS_dependence.html">install_Fast2TWAS_dependence</a></td>
+<td>安装Fast2TWAS的相关依赖</td></tr>
+</table>
+
+<h2><a id="L">-- L --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="lava_h2.html">lava_h2</a></td>
+<td>调用LAVA包计算local heritability</td></tr>
+<tr><td style="width: 25%;"><a href="lava_h2_rg.html">lava_h2_rg</a></td>
+<td>调用LAVA包计算local heritability和local genetic correlation</td></tr>
+<tr><td style="width: 25%;"><a href="lava_pcor.html">lava_pcor</a></td>
+<td>调用LAVA包计算Local partial genetic correlation analysis</td></tr>
+<tr><td style="width: 25%;"><a href="lava_rg.html">lava_rg</a></td>
+<td>调用LAVA包计算local genetic correlation</td></tr>
+<tr><td style="width: 25%;"><a href="ldsc_Cell_type_specific.html">ldsc_Cell_type_specific</a></td>
+<td>调用ldsc软件进行Cell type specific analyses</td></tr>
+<tr><td style="width: 25%;"><a href="ldsc_format.html">ldsc_format</a></td>
+<td>调用ldsc软件生成.sumstats.gz格式文件(表头：SNP A1 A2 N Z)，无返回值</td></tr>
+<tr><td style="width: 25%;"><a href="ldsc_h2.html">ldsc_h2</a></td>
+<td>调用ldsc软件计算SNP遗传度</td></tr>
+<tr><td style="width: 25%;"><a href="ldsc_partitioned_heritability.html">ldsc_partitioned_heritability</a></td>
+<td>调用ldsc软件计算Partitioning heritability</td></tr>
+<tr><td style="width: 25%;"><a href="ldsc_rg.html">ldsc_rg</a></td>
+<td>调用ldsc软件计算遗传相关性</td></tr>
+<tr><td style="width: 25%;"><a href="locusZoom_gassocplot2.html">locusZoom_gassocplot2</a></td>
+<td>调用gassocplot2包绘制指定基因和/或一定范围内的SNPs的LocusZoom图，无返回值</td></tr>
+<tr><td style="width: 25%;"><a href="LOGODetect_rg.html">LOGODetect_rg</a></td>
+<td>调用LOGODetect识别两个性状之间的局部遗传相关性</td></tr>
+</table>
+
+<h2><a id="M">-- M --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="magma_gene_based.html">magma_gene_based</a></td>
+<td>调用MAGMA软件实现gene-based &amp; gene-set-based关联分析</td></tr>
+<tr><td style="width: 25%;"><a href="magma_gene_property.html">magma_gene_property</a></td>
+<td>调用MAGMA软件进行Gene property analysis for tissue specificity分析</td></tr>
+<tr><td style="width: 25%;"><a href="mendelian_randomization.html">mendelian_randomization</a></td>
+<td>从本地或IEU数据库中的GWAS数据中筛选工具变量并进行MR分析</td></tr>
+<tr><td style="width: 25%;"><a href="mesc_gene_set_analysis.html">mesc_gene_set_analysis</a></td>
+<td>计算基因集的表达得分。可对多个组织/条件的表达得分进行meta分析，也可不进行meta分析。</td></tr>
+<tr><td style="width: 25%;"><a href="mesc_meta_analyze_weights.html">mesc_meta_analyze_weights</a></td>
+<td>对不同条件下的表达得分进行meta分析</td></tr>
+<tr><td style="width: 25%;"><a href="mesc_run.html">mesc_run</a></td>
+<td>调用mesc软件通过测定基因表达水平来估算遗传率：https://github.com/douglasyao/mesc</td></tr>
+<tr><td style="width: 25%;"><a href="metal_gwas.html">metal_gwas</a></td>
+<td>调用METAL软件进行GWAS数据的meta分析，有返回值</td></tr>
+<tr><td style="width: 25%;"><a href="MetaXcan_MASHR_M_model.html">MetaXcan_MASHR_M_model</a></td>
+<td>case-control型GWAS数据与GTEx v8 MASH模型的整合分析</td></tr>
+<tr><td style="width: 25%;"><a href="MetaXcan_quick_harmonization.html">MetaXcan_quick_harmonization</a></td>
+<td>转换GWAS数据的基因组版本，数据来源于UCSC，易于使用，但对应的变异较少，返回数据框</td></tr>
+<tr><td style="width: 25%;"><a href="MetaXcan_SMulTiXcan.html">MetaXcan_SMulTiXcan</a></td>
+<td>MetaXcan_SMulTiXcan进行跨组织TWAS分析</td></tr>
+<tr><td style="width: 25%;"><a href="MetaXcan_SPrediXcan.html">MetaXcan_SPrediXcan</a></td>
+<td>MetaXcan_SPrediXcan进行单个组织TWAS分析，生成49个.csv文件</td></tr>
+<tr><td style="width: 25%;"><a href="MetaXcan_SPrediXcan_easy.html">MetaXcan_SPrediXcan_easy</a></td>
+<td>快速简单的使用MetaXcan_SPrediXcan进行单个组织TWAS分析，生成49个.csv文件</td></tr>
+<tr><td style="width: 25%;"><a href="MiXeR_bivariate_run.html">MiXeR_bivariate_run</a></td>
+<td>MiXeR软件进行GWAS跨性状分析</td></tr>
+<tr><td style="width: 25%;"><a href="MiXeR_bivariate_visualize_run.html">MiXeR_bivariate_visualize_run</a></td>
+<td>MiXeR软件双性状GWAS分析可视化</td></tr>
+<tr><td style="width: 25%;"><a href="MiXeR_ld_run.html">MiXeR_ld_run</a></td>
+<td>利用参考文件生成.ld文件</td></tr>
+<tr><td style="width: 25%;"><a href="MiXeR_ld_run_multiprocess.html">MiXeR_ld_run_multiprocess</a></td>
+<td>利用参考文件生成.ld文件</td></tr>
+<tr><td style="width: 25%;"><a href="MiXeR_py_install.html">MiXeR_py_install</a></td>
+<td>创建MiXeR的python环境：fast2twas_MiXeR和配置libbgmg.so文件</td></tr>
+<tr><td style="width: 25%;"><a href="MiXeR_snps_run.html">MiXeR_snps_run</a></td>
+<td>利用参考文件生成.snp文件</td></tr>
+<tr><td style="width: 25%;"><a href="MiXeR_univariate_run.html">MiXeR_univariate_run</a></td>
+<td>MiXeR软件进行单个GWAS分析</td></tr>
+<tr><td style="width: 25%;"><a href="MiXeR_univariate_visualize_run.html">MiXeR_univariate_visualize_run</a></td>
+<td>MiXeR软件单个GWAS分析可视化</td></tr>
+<tr><td style="width: 25%;"><a href="mtag_cross_trait.html">mtag_cross_trait</a></td>
+<td>调用MTAG进行跨GWAS性状的meta分析</td></tr>
+<tr><td style="width: 25%;"><a href="my_token.html">my_token</a></td>
+<td>获取用户计算机的token</td></tr>
+</table>
+
+<h2><a id="O">-- O --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="Open4Gene_install.html">Open4Gene_install</a></td>
+<td>开始配置Open4Gene的运行R包和python环境：fast2twas_Open4Gene</td></tr>
+<tr><td style="width: 25%;"><a href="Open4Gene_run.html">Open4Gene_run</a></td>
+<td>开始运行Open4Gene</td></tr>
+</table>
+
+<h2><a id="P">-- P --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="PLACO_cross_trait.html">PLACO_cross_trait</a></td>
+<td>调用PLACO对两个GWAS数据进行跨性状关联分析</td></tr>
+<tr><td style="width: 25%;"><a href="pleiofdr_run.html">pleiofdr_run</a></td>
+<td>通过利用遗传多效性增强低统计效能GWAS研究的基因位点发现率，并识别与两种表型联合相关的基因位点</td></tr>
+<tr><td style="width: 25%;"><a href="plink_meta.html">plink_meta</a></td>
+<td>调用plink软件进行meta分析</td></tr>
+<tr><td style="width: 25%;"><a href="PRS_CS_run.html">PRS_CS_run</a></td>
+<td>调用PRS-CS软件利用GWAS数据与外部LD参考面板来计算SNP后验效应值</td></tr>
+<tr><td style="width: 25%;"><a href="PRS_PRSice.html">PRS_PRSice</a></td>
+<td>调用PRSice-2进行多基因风险评分</td></tr>
+<tr><td style="width: 25%;"><a href="PRS_target_data_qc.html">PRS_target_data_qc</a></td>
+<td>多基因风险评分中目标数据（Target Data）的质量控制</td></tr>
+<tr><td style="width: 25%;"><a href="pwcoco_local_gwas2gwas.html">pwcoco_local_gwas2gwas</a></td>
+<td>调用PWCoCo进行Pair-Wise Conditional analysis和Colocalisation analysis分析</td></tr>
+<tr><td style="width: 25%;"><a href="pwcoco_local_gwas2gwas_pro.html">pwcoco_local_gwas2gwas_pro</a></td>
+<td>调用PWCoCo在指定基因组区域中进行Pair-Wise Conditional analysis和Colocalisation analysis分析</td></tr>
+<tr><td style="width: 25%;"><a href="python_convert_csv.html">python_convert_csv</a></td>
+<td>调用fast2twas_python_convert的python环境，启用"csv"功能，用于转换GWAS数据格式</td></tr>
+<tr><td style="width: 25%;"><a href="python_convert_fdrmat2csv.html">python_convert_fdrmat2csv</a></td>
+<td>将cond/conjFDR结果中的results.mat文件转换为.csv文件</td></tr>
+<tr><td style="width: 25%;"><a href="python_convert_fuma_defined_loci.html">python_convert_fuma_defined_loci</a></td>
+<td>确定cond/conjFDR结果中独立的基因组位点，实现与FUMA相同的逻辑</td></tr>
+<tr><td style="width: 25%;"><a href="python_convert_mat.html">python_convert_mat</a></td>
+<td>将GWAS数据转换为.mat文件格式</td></tr>
+<tr><td style="width: 25%;"><a href="python_convert_py_install.html">python_convert_py_install</a></td>
+<td>创建python_convert的python环境：fast2twas_python_convert用于转换GWAS数据格式</td></tr>
+<tr><td style="width: 25%;"><a href="python_convert_zscore.html">python_convert_zscore</a></td>
+<td>调用fast2twas_python_convert的python环境，启用"zscore"功能，用于转换GWAS数据格式</td></tr>
+</table>
+
+<h2><a id="Q">-- Q --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="QTLEnrich_forest_boxplot_run.html">QTLEnrich_forest_boxplot_run</a></td>
+<td>调用QTLEnrich的输出文件生成forest_boxplot图</td></tr>
+<tr><td style="width: 25%;"><a href="QTLEnrich_py_install.html">QTLEnrich_py_install</a></td>
+<td>创建QTLEnrich的python环境</td></tr>
+<tr><td style="width: 25%;"><a href="QTLEnrich_qqplot_run.html">QTLEnrich_qqplot_run</a></td>
+<td>用QTLEnrich的输出文件生成Q-Q图</td></tr>
+<tr><td style="width: 25%;"><a href="QTLEnrich_run.html">QTLEnrich_run</a></td>
+<td>使用QTLEnrich用于评估给定组织中表达定量性状位点（eQTL）或剪接 QTL（sQTL）之间复杂疾病或性状关联的富集情况</td></tr>
+</table>
+
+<h2><a id="R">-- R --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="read_gwas2format.html">read_gwas2format</a></td>
+<td>读入本地GWAS数据生成建议的GWAS数据格式</td></tr>
+<tr><td style="width: 25%;"><a href="read_ieu_data.html">read_ieu_data</a></td>
+<td>直接从IEU官网或本地读取vcf.gz文件生成GWAS数据</td></tr>
+<tr><td style="width: 25%;"><a href="read_ieu_data_pro.html">read_ieu_data_pro</a></td>
+<td>调用python代码直接从IEU官网或本地读取vcf.gz文件生成GWAS数据</td></tr>
+</table>
+
+<h2><a id="S">-- S --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="scDRS_compute_score_run.html">scDRS_compute_score_run</a></td>
+<td>计算scDRS分数，为每个性状生成.score.gz和.full_score.gz文件</td></tr>
+<tr><td style="width: 25%;"><a href="scDRS_munge_gs_run.html">scDRS_munge_gs_run</a></td>
+<td>将.tsv格式的GWAS基因统计文件转换为scDRS的.gs文件</td></tr>
+<tr><td style="width: 25%;"><a href="scDRS_perform_downstream_run.html">scDRS_perform_downstream_run</a></td>
+<td>根据预先计算的.full_score.gz文件执行scDRS下游分析</td></tr>
+<tr><td style="width: 25%;"><a href="scDRS_py_install.html">scDRS_py_install</a></td>
+<td>开始创建scDRS的python环境：fast2twas_scDRS</td></tr>
+<tr><td style="width: 25%;"><a href="set_work_dir.html">set_work_dir</a></td>
+<td>设置工作文件夹，创建code，result，log，data文件夹</td></tr>
+<tr><td style="width: 25%;"><a href="show_demo_gwas.html">show_demo_gwas</a></td>
+<td>Fast2TWAS包中作为输入文件的GWAS数据格式和表头</td></tr>
+<tr><td style="width: 25%;"><a href="SMR_HEIDI_analysis.html">SMR_HEIDI_analysis</a></td>
+<td>SMR软件进行SMR和HEIDI analysis分析</td></tr>
+<tr><td style="width: 25%;"><a href="SMR_locus_plot.html">SMR_locus_plot</a></td>
+<td>SMR软件绘制SMR locus图</td></tr>
+<tr><td style="width: 25%;"><a href="SMR_query_eQTL_summary.html">SMR_query_eQTL_summary</a></td>
+<td>SMR软件获取eQTL Summary Results数据（https://yanglab.westlake.edu.cn/software/smr/#DataResource）</td></tr>
+<tr><td style="width: 25%;"><a href="stack_assoc_plot_gassocplot2.html">stack_assoc_plot_gassocplot2</a></td>
+<td>调用gassocplot2包绘制指定基因组区域stack_assoc_plot图</td></tr>
+<tr><td style="width: 25%;"><a href="SumStatsRehab_diagnose.html">SumStatsRehab_diagnose</a></td>
+<td>调用SumStatsRehab中的diagnose功能检测GWAS数据</td></tr>
+<tr><td style="width: 25%;"><a href="SumStatsRehab_fix.html">SumStatsRehab_fix</a></td>
+<td>调用SumStatsRehab中的fix功能修补GWAS数据</td></tr>
+<tr><td style="width: 25%;"><a href="SumStatsRehab_prepare_dbSNPs.html">SumStatsRehab_prepare_dbSNPs</a></td>
+<td>调用SumStatsRehab中的prepare_dbSNPs功能准备dbSNPs数据</td></tr>
+<tr><td style="width: 25%;"><a href="SumStatsRehab_py_install.html">SumStatsRehab_py_install</a></td>
+<td>创建SumStatsRehab的python环境</td></tr>
+<tr><td style="width: 25%;"><a href="SUPERGNOVA_estimate_genetic_correlation.html">SUPERGNOVA_estimate_genetic_correlation</a></td>
+<td>调用SUPERGNOVA进行local genetic covariance和correlation分析</td></tr>
+</table>
+
+<h2><a id="T">-- T --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="TWAS_focus_creating_weight_database.html">TWAS_focus_creating_weight_database</a></td>
+<td>调用FOCUS软件创建db数据库：https://github.com/mancusolab/ma-focus/wiki/Creating-a-weight-database</td></tr>
+<tr><td style="width: 25%;"><a href="TWAS_focus_fine_mapping_multiprocess.html">TWAS_focus_fine_mapping_multiprocess</a></td>
+<td>FOCUS软件将GWAS数据摘要和eQTL权重作为输入，来进行fine-mapping分析</td></tr>
+<tr><td style="width: 25%;"><a href="TWAS_focus_format.html">TWAS_focus_format</a></td>
+<td>调用TwoSampleMR包将GWAS数据生成生成FOCUS软件执行TWAS分析所需的数据（表头："CHR","BP","SNP","A1","A2","Z","N"）</td></tr>
+<tr><td style="width: 25%;"><a href="TWAS_focus_format_clean.html">TWAS_focus_format_clean</a></td>
+<td>调用FOCUS软件将GWAS数据转换成FOCUS软件执行fine-mapping分析所需的数据（表头："CHR","BP","SNP","A1","A2","Z","N"）</td></tr>
+<tr><td style="width: 25%;"><a href="TWAS_fusion_conditional_plot_multiprocess.html">TWAS_fusion_conditional_plot_multiprocess</a></td>
+<td>FUSION软件执行TWAS分析，进行Joint/condation分析</td></tr>
+<tr><td style="width: 25%;"><a href="TWAS_fusion_multiprocess.html">TWAS_fusion_multiprocess</a></td>
+<td>FUSION软件执行TWAS分析，获取基因与疾病之间的TWAS分析结果，可以多线程进行</td></tr>
+<tr><td style="width: 25%;"><a href="TWAS_Manhattan_plot.html">TWAS_Manhattan_plot</a></td>
+<td>调用CMplot包绘制TWAS结果的全基因组曼哈顿图，数据表头至少包含"ID","CHR","P0","TWAS.P"列</td></tr>
+<tr><td style="width: 25%;"><a href="TWAS_UTMOST_cross_tissue.html">TWAS_UTMOST_cross_tissue</a></td>
+<td>UTMOST软件执行TWAS分析,计算GTExV8中跨组织联合测试关联结果</td></tr>
+<tr><td style="width: 25%;"><a href="TWAS_UTMOST_single_tissue.html">TWAS_UTMOST_single_tissue</a></td>
+<td>UTMOST软件执行TWAS分析，获取GTExV8中单个组织中基因与疾病之间的TWAS分析结果</td></tr>
+</table>
+</div></body></html>
